@@ -1,0 +1,13 @@
+name: Test setup-node
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  node-20:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wndus901/setup-node@wndus901-node-version-guard
+        with:
+          node-version: 20
